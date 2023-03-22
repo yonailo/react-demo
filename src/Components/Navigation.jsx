@@ -1,35 +1,32 @@
-import { Link } from "react-router-dom";
-import { useTheme } from "@material-ui/styles";
+import Button from "@mui/material/Button";
 
 function Nav() {
-  const theme = useTheme();
-
   return (
-    <div style={{ display: "flex" }}>
-      <Link to="/" style={theme.a}>
+    <div style={{ display: "flex", gap: "20px", marginBottom: "20px" }}>
+      <Button href="/" variant="contained">
         Homepage
-      </Link>
-      <Link to="/counter" style={theme.a}>
+      </Button>
+      <Button href="/counter" variant="contained">
         Counter
-      </Link>
-      <Link to="/login" style={theme.a}>
+      </Button>
+      <Button href="/login" variant="contained">
         Login
-      </Link>
-      <Link to="/planet" style={theme.a}>
+      </Button>
+      <Button href="/planet" variant="contained">
         Planet API
-      </Link>
-      <Link to="/register" style={theme.a}>
+      </Button>
+      <Button href="/register" variant="contained">
         Register
-      </Link>
-      <Link to="/dashboard" style={theme.a}>
+      </Button>
+      <Button href="/dashboard" variant="contained">
         Dashboard
-      </Link>
-      <Link to="/createPost" style={theme.a}>
+      </Button>
+      <Button href="/createPost" variant="contained">
         Create posts
-      </Link>
-      <Link to="/listPosts" style={theme.a}>
+      </Button>
+      <Button href="/listPosts" variant="contained">
         Lists posts
-      </Link>
+      </Button>
     </div>
   );
 }
